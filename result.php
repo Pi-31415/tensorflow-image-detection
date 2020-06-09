@@ -8,6 +8,17 @@
 		font-family: sans-serif;
 	}
 
+	.btn {
+		border: 2px solid gray;
+		color: gray;
+		background-color: white;
+		padding: 8px 20px;
+		border-radius: 8px;
+		font-size: 20px;
+		font-weight: bold;
+		text-decoration: none;
+	}
+
 	#loader {
 		border: 5px solid #f3f3f3;
 		border-radius: 50%;
@@ -44,10 +55,10 @@
 </style>
 <center><br>
 	<div id="loader"></div><br>
-	
+
 	<p id="prediction">Please wait.</p>
-	<!-- Replace this with your image. Make sure CORS settings allow reading the image! -->
-	<a href="./index.php">Try with another image.</a>
+	<!-- Replace this with your image. Make sure CORS settings allow reading the image! --><br>
+	<a href="./index.php" class="btn">Try with another image.</a>
 	<br><br>
 	<img width="400px" id="img" src="./<?=$_GET['imageurl']?>">
 </center>
