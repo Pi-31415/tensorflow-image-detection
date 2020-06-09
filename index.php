@@ -62,7 +62,7 @@
 			<br><br><br>
 			<center>
 				<form action="authimage.php" method="post" enctype="multipart/form-data">
-					<p>Image Detection Test</p>
+					<p><b>Image Detection Test</b></p>
 					<p>With Tensorflow JS pretrained models</p>
 					Upload an image <br> (preferably a small one)<br> <br>
 					<div class="upload-btn-wrapper"  onclick="showupload()">
