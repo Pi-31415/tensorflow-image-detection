@@ -40,7 +40,7 @@
 			<center>
 				<br><br><br><br>
 				<form action="authimage.php" method="post" enctype="multipart/form-data">
-					<h5>Image Detection Test by Pi</h5><br>
+					<h5>Image Detection Test</h5><br>
 					<p>With Tensorflow JS pretrained models</p>
 					Upload an image <br> (preferably a small one)<br> <br>
 					<input type="file" name="fileToUpload" id="fileToUpload">
@@ -57,6 +57,8 @@
 		document.getElementById("loader").style.visibility = "visible";
 	}
 	</script>
+	<br>
+	by Pi
 </body>
 
 </html>
