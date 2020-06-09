@@ -8,7 +8,7 @@
 		body{
 			font-family: sans-serif;
 		}
-		.loader {
+		#loader {
 		  border: 5px solid #f3f3f3;
 		  border-radius: 50%;
 		  border-top: 5px solid #3498db;
@@ -43,13 +43,18 @@
 					Upload an image <br> (preferably a small one)<br> <br>
 					<input type="file" name="fileToUpload" id="fileToUpload">
 					<br><br><br>
-					<input type="submit" value="Upload Image" name="submit">
+					<input type="submit" onclick="loaderbar();" value="Upload Image" name="submit">
 					<br><br>
-					<div class="loader"></div>
+					<div id="loader"></div>
 				</form>
 			</center>
 		</div>
 	</div>
+	<script>
+	function loaderbar(){
+		alert("yes");
+	}
+	</script>
 </body>
 
 </html>
