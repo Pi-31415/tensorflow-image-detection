@@ -3,15 +3,17 @@
 <!-- Load the MobileNet model. -->
 <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet@1.0.0"> </script>
 <script src="https://code.responsivevoice.org/responsivevoice.js?key=kqPJ0rUe"></script>
-<h3 id="prediction">Please wait.</h3>
-<!-- Replace this with your image. Make sure CORS settings allow reading the image! -->
-<img width="400px" id="img" src="./<?=$_GET['imageurl']?>">
-
+<center>
+	<h3 id="prediction">Please wait.</h3>
+	<!-- Replace this with your image. Make sure CORS settings allow reading the image! -->
+	<a href="./index.php">Try with another image.</a>
+	<br><br>
+	<img width="400px" id="img" src="./<?=$_GET['imageurl']?>">
+</center>
 <!-- Place your code in the script tag below. You can also use an external .js file -->
 <script>
 	// Notice there is no 'import' statement. 'mobilenet' and 'tf' is
 	// available on the index-page because of the script tag above.
-
 	function speak(k) {
 		speaker = "UK English Male";
 		speed = 0.90;
@@ -19,7 +21,6 @@
 			rate: speed
 		});
 	}
-
 	const img = document.getElementById('img');
 	var obj;
 	// Load the model.
@@ -35,5 +36,5 @@
 			speak(speech);
 		});
 	});
+
 </script>
-<a href="./index.php">Try with another image.</a>
